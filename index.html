@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Rampage 2022 Demo</title>
+  <link rel="shortcut icon" href="TemplateData/redbullLogo.ico">
+  <link rel="stylesheet" href="TemplateData/style.css">
+</head>
+
+<body>
+  <div id="debug-panel"
+    style="width: 256px; height: 128px; background-color: rgba(255, 255, 255, 1); z-index: 1000; position: absolute; display: inline;">
+    <p id="var1">var 1 content</p>
+    <p id="var2">var 2 content</p>
+    <p id="var3">var 3 content</p>
+  </div>
+
+  <!-- CANVAS OVERLAY -->
+  <!-- used to avoid lost focus when mouse over the unity canvas -->
+  <div id="canvas-overlay" style="width: 256px; height: 256px; z-index: 1000; position: absolute; display: inline;">
+  </div>
+
+  <!-- Top Page Content -->
+  <div id="header-content">
+    <img src="assets/header.png" style="width:auto" width="100%">
+  </div>
+  <!-- ---------------- -->
+
+  <div id="unity-container" class="unity-desktop">
+    <canvas id="unity-canvas" width="100%" height="100%"></canvas>
+    <div id="unity-loading-bar">
+      <div id="redbull-logo"></div>
+      <div id="unity-progress-bar-empty">
+        <div id="unity-progress-bar-full"></div>
+      </div>
+    </div>
+    <div id="unity-warning"> </div>
+    <div id="unity-footer" width="100%">
+      <!-- <div id="unity-webgl-logo"></div> -->
+      <!-- <div id="unity-fullscreen-button"></div> -->
+      <!-- <div id="unity-build-title">InteractiveWebPage</div> -->
+    </div>
+  </div>
+
+
+  <!-- Bottom Page Content -->
+  <div id="footer-content" style="padding-top: 100px;">
+    <img src="assets/footer.png" style="width:auto" width="100%">
+  </div>
+  <!-- ---------------- -->
+
+  <!--- Logic Scripts -->
+  <script src="js/rbUnityWebGLInitializer.js"></script>
+  <script src="js/rbUnityBridge.js"></script>
+  <script src="js/rbHelper.js"></script>
+  <script src="js/rbDebugPanel.js"></script>
+  <script src="js/moveWebGlAnimByScroll.js"></script>
+  <script src="js/universalsmoothscroll-min.js"></script>
+
+  <script>
+   
+  </script>
+</body>
+
+</html>

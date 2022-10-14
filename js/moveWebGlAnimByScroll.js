@@ -59,7 +59,7 @@ function onWheel(e) {
 function refreshCanvas(scrollDeltaY, canvasOffset) {
     scrollPos = window.pageYOffset;
     // var1.innerHTML = "Cur Pos: " + scrollPos;
-    debugPanel.style.paddingTop = scrollPos + "px";
+    // debugPanel.style.paddingTop = scrollPos + "px";
 
     let scrollingDown = scrollDeltaY > 0;
     let isOnCanvasRegion = scrollPos > (headerContentHeight - Number(canvasOffset)) && scrollPos < (headerContentHeight + Number(canvasOffset));

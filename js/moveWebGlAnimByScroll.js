@@ -58,14 +58,14 @@ function onWheel(e) {
 
 function refreshCanvas(scrollDeltaY, canvasOffset) {
     scrollPos = window.pageYOffset;
-    var1.innerHTML = "Cur Pos: " + scrollPos;
+    // var1.innerHTML = "Cur Pos: " + scrollPos;
     debugPanel.style.paddingTop = scrollPos + "px";
 
     let scrollingDown = scrollDeltaY > 0;
     let isOnCanvasRegion = scrollPos > (headerContentHeight - Number(canvasOffset)) && scrollPos < (headerContentHeight + Number(canvasOffset));
 
     if (isOnCanvasRegion) {
-        var2.innerHTML = "Canvas " + headerContentHeight + " - "+ canvasOffset;
+        // var2.innerHTML = "Canvas " + headerContentHeight + " - "+ canvasOffset;
 
         if (!animationIsRunning) {
             if (scrollingDown) {
@@ -104,7 +104,7 @@ function refreshCanvas(scrollDeltaY, canvasOffset) {
         }
     }
 
-    var2.innerHTML = "Webpage " + headerContentHeight + " - "+ canvasOffset;
+    // var2.innerHTML = "Webpage " + headerContentHeight + " - "+ canvasOffset;
 }
 
 //return 1 to animation finished topDown, -1 finished downTop and 0 if not finished yet
@@ -129,7 +129,7 @@ function fixPageOnAnimatedCanvas() {
     animationIsRunning = true;
     windowFixed = true;
 
-    var3.innerHTML = "animation is Running!";
+    // var3.innerHTML = "animation is Running!";
 }
 
 function releasePageFromAnimatedCanvas(scrollingDown, newWindowPos) {

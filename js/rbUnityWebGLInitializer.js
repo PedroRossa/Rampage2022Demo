@@ -115,7 +115,10 @@ script.onload = () => {
     }).then((uInstance) => {
         unityInstance = uInstance;
         loadingBar.style.display = "none";
-        unityLoaded();
+        
+        setTimeout(unityLoaded, 3000);
+
+        
         U_sendWebGlCanvasInfo(pageHeight, headerContentHeight, unityContainerWidth, unityContainerHeight);
     }).catch((message) => {
         alert(message);

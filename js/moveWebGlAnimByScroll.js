@@ -1,19 +1,3 @@
-const headerContent = document.querySelector("#header-content");
-const footerContent = document.querySelector("#footer-content");
-const canvasOverlay = document.querySelector("#canvas-overlay");
-
-const headerContentHeight = headerContent.getBoundingClientRect().height;
-const unityContainerWidth = container.getBoundingClientRect().width;
-const unityContainerHeight = container.getBoundingClientRect().height;
-
-const unityCanvasPosition = Number(headerContentHeight + headerContent.style.marginTop);
-
-footerContent.style.paddingTop = unityContainerHeight + "px";
-
-canvasOverlay.style.width = unityContainerWidth + "px";
-canvasOverlay.style.height = unityContainerHeight + "px";
-canvasOverlay.style.top = headerContentHeight + "px";
-
 //for mobile
 document.addEventListener("touchstart", onTouchStart);
 document.addEventListener('touchmove', onTouchMove);

@@ -15,6 +15,18 @@ function U_sendScrollDataToUnity(scrollPos, deltaY) {
     unityInstance.SendMessage('JsBridge', 'JsDeltaYChanged', deltaY);
 }
 
+
+//Map Mouse Events
+/* ******************************************************* */
+function U_sendMouse(val){
+    
+}
+
+/* ******************************************************* */
+
+//Send values to unity
+/* ******************************************************* */
+
 function U_sendFloatValue(propertyName, value) {
     var valueToSend = propertyName + ':' + value;
 
@@ -58,3 +70,5 @@ function U_sendBooleanValue(propertyName, value) {
 
     unityInstance.SendMessage('JsBridge', 'JsReceiveBooleanValue', valueToSend);
 }
+
+/* ******************************************************* */
